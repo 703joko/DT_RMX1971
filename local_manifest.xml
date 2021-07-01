@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="NusantaraROM-Devices/device_realme_RMX1971" path="device/realme/RMX1971" remote="github" revision="eleven" />
+  <project name="703joko/device_realme_sdm710-common" path="device/realme/sdm710-common" remote="github" revision="eleven" />
+  <project name="NusantaraROM-Devices/vendor_realme_RMX1971" path="vendor/realme/RMX1971" remote="github" revision="eleven" />
+  <project name="703joko/vendor_realme_sdm710-common" path="vendor/realme/sdm710-common" remote="github" revision="eleven" />
+  <project name="703joko/android_kernel_realme_RMX1971" path="kernel/realme/RMX1971" remote="github" revision="eleven" />
+</manifest>
