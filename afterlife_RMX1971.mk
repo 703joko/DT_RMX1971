@@ -1,18 +1,18 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The afterlifeOS Project
 #
 # SPDX-License-Identifer: Apache-2.0
 #
 
-# Inherit some common Rising stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AfterLife stuff.
+$(call inherit-product, vendor/afterlife/config/common.mk)
 
 # Inherit from RMX1971 device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := RMX1971
-PRODUCT_NAME := lineage_RMX1971
+PRODUCT_NAME := afterlife_RMX1971
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme 5 Pro
 PRODUCT_MANUFACTURER := Realme
@@ -33,27 +33,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true
 
-# Pixel
-WITH_GMS := true
-TARGET_CORE_GMS := false
-TARGET_CORE_GMS_EXTRAS := false
-TARGET_USE_GOOGLE_TELEPHONY := false
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+#GappsFull
+AFTERLIFE_GAPPS := true
 
-# Package Type
-RISING_PACKAGE_TYPE := Gapps
+#Maintainer
+AFTERLIFE_MAINTAINER := jrInfected
 
-# Official
-RISING_MAINTAINER := KSSRAO
+#Offline Charging
+TARGET_USES_PIXEL_CHARGING =: true
 
-# Graphene Camera
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
+#Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
-# AudioFx
-TARGET_EXCLUDES_AUDIOFX := true
-
-# Aperture Camera
-TARGET_BUILD_APERTURE_CAMERA := true
-
-# UDFPS ICONS/ANIMATIONS
-TARGET_HAS_UDFPS := false
+# AfterLify
+AFTERLIFE_BUILD_TYPE := OFFICIAL

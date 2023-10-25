@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The afterlifeOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1971.mk
+    $(LOCAL_DIR)/afterlife_RMX1971.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_RMX1971-user \
-    lineage_RMX1971-userdebug \
-    lineage_RMX1971-eng
+    afterlife_RMX1971-user \
+    afterlife_RMX1971-userdebug \
+    afterlife_RMX1971-eng
