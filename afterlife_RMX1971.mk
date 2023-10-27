@@ -40,7 +40,7 @@ AFTERLIFE_GAPPS := true
 AFTERLIFE_MAINTAINER := jrInfected
 
 #Offline Charging
-TARGET_USES_PIXEL_CHARGING =: true
+USE_PIXEL_CHARGING =: true
 
 #Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
