@@ -8,6 +8,7 @@ DEVICE_PATH := device/realme/RMX1971
 
 BOARD_VENDOR := realme
 
+BUILD_BROKEN_DUP_SYSPROP := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
@@ -45,11 +46,12 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_SOURCE := kernel/realme/sdm710
 TARGET_KERNEL_CONFIG := sdm670-perf_defconfig
-TARGET_KERNEL_CLANG_VERSION := r416183b1
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r416183b1
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
 TARGET_KERNEL_LLVM_BINUTILS := false
 TARGET_KERNEL_ADDITIONAL_FLAGS += \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm710
